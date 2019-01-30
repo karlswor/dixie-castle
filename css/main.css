@@ -1,0 +1,11 @@
+p {
+  font-size: 60px;
+}
+
+li {
+  display: inline;
+  font-size: 24px;
+  font-color: #123;
+  text-align: right;
+  background-color: #Red;
+}
