@@ -1,11 +1,13 @@
 p {
-  font-size: 60px;
+  font-size: 32px;
+  color: blue;
+font-size: "Times New Roman", Times, Serif;
 }
 
 li {
   display: inline;
   font-size: 24px;
-  font-color: #123;
+  color: Green;
   text-align: right;
-  background-color: #Red;
+  background-color: #red;
 }
