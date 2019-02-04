@@ -1,13 +1,31 @@
 p {
   font-size: 32px;
-  color: blue;
-font-size: "Times New Roman", Times, Serif;
+  color: tomato;
+  font-size: "Times New Roman", Times, Serif;
+}
+
+nav {
+  height: 100%;
+  width: 100%
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 li {
-  display: inline;
-  font-size: 24px;
-  color: Green;
-  text-align: right;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   background-color: #red;
+
 }
