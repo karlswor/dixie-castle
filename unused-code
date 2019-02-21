@@ -1,0 +1,36 @@
+.css-carousal {
+  overflow:hidden;
+}
+
+.css-carousal .css-img {
+  width: 40%;
+  height: 40%;
+  max-width: 40%;
+  max-height: 40%;
+  position: absolute;
+  -webkit-animation-name: css-animation-fade;
+  -webkit-animation-duration:30s;
+  -webkit-animation-iteration-count:infinite;
+}
+
+.css-carousal .css-img:nth-child(2) {
+  webkit-animation-delay: 5s;
+}
+.css-carousal .css-img:nth-child(3) {
+  webkit-animation-delay: 10s;
+}
+.css-carousal .css-img:nth-child(4) {
+  webkit-animation-delay: 15s;
+}
+.css-carousal .css-img:nth-child(5) {
+  webkit-animation-delay: 20s;
+}
+
+
+@-webkit-keyframes css-animation-fade {
+  from {opacity: 0;}
+  5%{opacity: 1;}
+  15%{opacity: 1;}
+  20%{opacity: 0;}
+  to{opacity: 0;}
+}
