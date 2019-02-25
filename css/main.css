@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 p {
@@ -90,7 +90,10 @@ ul li a:hover {
 h1 {
   text-align: center;
   text-decoration: none;
-  color: black;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 .intro {
@@ -126,4 +129,19 @@ h1 {
   overflow: hidden;
   background-color: gainsboro;
   position: relative;
+}
+
+.galleryContainer .slideshowcontainer .imageHolder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.galleryContainer .slideshowcontainer .imageHolder img {
+  width: 100%;
+  height: 100%;
+}
+
+.galleryContainer .slideshowcontainer .imageHolder .captionText {
+  display: none;
 }
