@@ -22,31 +22,37 @@
     <h1><a href="index.html"><em>Dixie Castle</em></a></h1>
 </div>
 
-    <!--carousal-->
-<div class="galleryContainer">
-  <div class="slideshowcontainer">
-    <div class="images">
-      <div class="imageHolder">
-        <img src="./img/bbquinn.jpg" class="css-img">
-        <p class="captionText"<caption Text-01</p>
-        </div>
-      <div class="imageHolder">
-        <img src="./img/blackdude.jpg" class="css-img">
-        <p class="captionText"<caption Text-02</p>
-      </div>
-      <div class="imageHolder">
-        <img src="./img/raven.jpg" class="css-img">
-        <p class="captionText"<caption Text-03</p>
-        </div>
-      <div class="imageHolder">
-        <img src="./img/duncan.jpg" class="css-img">
-        <p class="captionText"<caption Text-04</p>
-      </div>
-    </div>
-  </div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+ <div class="mySlides fade">
+   <div class="numbertext">1 / 3</div>
+   <img src="./img/dixiepooper.jpg" style="width:100%">
+   <div class="text">Dixie Castle 1 Exterior</div>
+ </div>
+ <div class="mySlides fade">
+   <div class="numbertext">2 / 3</div>
+   <img src="./img/dixierapper.jpg" style="width:100%">
+   <div class="text">Steak with Onions and fries!</div>
+ </div>
+ <div class="mySlides fade">
+   <div class="numbertext">3 / 3</div>
+   <img src="./img/originalcastleofdixie.jpg" style="width:100%">
+   <div class="text">Simi Out</div>
+ </div>
+ <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
-    <p class="intro">Dixie Castle was founded in Jackson Tennessee in 1942. If you like old fashioned home cooking with a pleasant enviornment than we've got just what you need. We're home to one of the most unique environments in Jackson. We're
+    <p class="intro">Dixie Castle was founded in Jackson Tennessee in 1937. If you like old fashioned home cooking with a pleasant enviornment than we've got just what you need. We're home to one of the most unique environments in Jackson. We're
       proud to be <b><i>locally owned and operated</i></b>.</p>
 
 
@@ -65,7 +71,33 @@
         933 Airways Blvd; Jackson, TN 38301</li>
     </ul>
   </div>
-<script src="myScript.js"></script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+ }
+ slides[slideIndex-1].style.display = "block";
+ dots[slideIndex-1].className += " active";
+}
+</script>
 </body>
 
 </html>
