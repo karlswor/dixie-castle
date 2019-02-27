@@ -80,6 +80,7 @@ body {
   display: inline-block;
   float: left;
   padding: 10px;
+  font-size: 15px;
 }
 
 .fb {
@@ -113,6 +114,15 @@ h2 {
 }
 .hoursinfo {
   font-size: 25px;
+}
+.headingtakeout {
+  color: green;
+}
+.homelink a {
+  text-decoration: none;
+  text-align: center;
+  font-family: cursive;
+  display: block;
 }
 /* Slideshow container */
 .slideshow-container {
