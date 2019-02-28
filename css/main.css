@@ -91,6 +91,7 @@ body {
 h1 {
   text-align: center;
   text-decoration: none;
+  font-family: Courier New;
 }
 
 h2 {
@@ -123,6 +124,7 @@ h2 {
   text-align: center;
   font-family: cursive;
   display: block;
+  color: blue;
 }
 /* Slideshow container */
 .slideshow-container {
