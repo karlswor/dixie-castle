@@ -20,49 +20,47 @@
         <li><a href="hours.html">Hours</a></li>
     </div>
     <p class="homelink"><a href="index.html"><em>Dixie Castle</em></a></p>
-</div>
+  </div>
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
-  <!-- Full-width images with number and caption text -->
- <div class="mySlides fade">
-   <div class="numbertext">1 / 3</div>
-   <img src="./img/dixiepooper.jpg" style="width:100%">
-   <div class="text">Dixie Castle 1 Exterior</div>
- </div>
- <div class="mySlides fade">
-   <div class="numbertext">2 / 3</div>
-   <img src="./img/dixierapper.jpg" style="width:100%">
-   <div class="text">Steak with Onions and fries!</div>
- </div>
- <div class="mySlides fade">
-   <div class="numbertext">3 / 3</div>
-   <img src="./img/originalcastleofdixie.jpg" style="width:100%">
-   <div class="text">Dixie Castle in 1937</div>
- </div>
- <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-<div class="row">
-  <div class="column">
-<img src="./img/Review1.jpg" alt="reviewfirst" style="width:100%">
-</div>
-<div class="column">
-<img src="./img/review2.jpg" alt="reviewsecond" style="width:100%">
-</div>
-<div class="column">
-  <img src="./img/review3.jpg" alt="reviewthird" style="width:100%"
-</div>
-</div>
-    <p class="intro">Dixie Castle was founded in Jackson Tennessee in 1936. If you like old fashioned home cooking with a pleasant enviornment than we've got just what you need. We're home to one of the most unique environments in Jackson. We're
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./img/dixiepooper.jpg" style="width:100%">
+      <div class="text">Dixie Castle 1 Exterior</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./img/dixierapper.jpg" style="width:100%">
+      <div class="text">Steak with Onions and fries!</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./img/originalcastleofdixie.jpg" style="width:100%">
+      <div class="text">Dixie Castle in 1937</div>
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="./img/Review1.jpg" alt="reviewfirst" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="./img/review2.jpg" alt="reviewsecond" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="./img/review3.jpg" alt="reviewthird" style="width:100%" </div> </div> <p class="intro">Dixie Castle was founded in Jackson Tennessee in 1936. If you like old fashioned home cooking with a pleasant enviornment than we've got just what
+      you need. We're home to one of the most unique environments in Jackson. We're
       proud to be <b><i>locally owned and operated</i></b>. Dixie Castle is the longest running resturant in all of West Tennessee. We're not delivering meals on Harley's anymore, but we're still true to our roots with a good quality meal.</p>
 
 
@@ -71,45 +69,49 @@
 
 
 
-  <div class="footer">
+      <div class="footer">
 
-    <ul>
-      <li>Phone Number: 731-423-3359</li>
-      <li>Email Address: dixiecastledowntown@gmail.com</li>
-      <li>Addresses:
-        215 E Baltimore St, Jackson, TN 38301
-        933 Airways Blvd; Jackson, TN 38301</li>
-        <li>©The Real Bros of Madison County</li>
-    </ul>
-  </div>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" active", "");
- }
- slides[slideIndex-1].style.display = "block";
- dots[slideIndex-1].className += " active";
-}
+        <ul>
+          <li>Phone Number: 731-423-3359</li>
+          <li>Email Address: dixiecastledowntown@gmail.com</li>
+          <li>Addresses:
+            215 E Baltimore St, Jackson, TN 38301
+            933 Airways Blvd; Jackson, TN 38301</li>
+          <li>©The Real Bros of Madison County</li>
+        </ul>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
 
-</script>
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1
+          }
+          if (n < 1) {
+            slideIndex = slides.length
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
 </body>
 
 </html>
