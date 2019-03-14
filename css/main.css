@@ -6,7 +6,7 @@
 
 p {
   font-size: 32px;
-  color: #8B0000;
+  color: black;
   font-size: "Times New Roman", Times, Serif;
 }
 
@@ -36,7 +36,7 @@ p {
 }
 
 body {
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/cloth.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

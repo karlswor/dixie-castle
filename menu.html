@@ -86,112 +86,112 @@
       <div class="filterDiv Desserts">Whole Pecan Pie</div>
     </div>
     <!-- Slideshow container -->
-<div class="slideshow-container">
+    <div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="./img/filet_mingon.jpg" style="width:100%">
-    <div class="text">Filet Mingnon</div>
-  </div>
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="./img/filet_mingon.jpg" style="width:100%">
+        <div class="text">Filet Mingnon</div>
+      </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="./img/cheeseburger.jpg" style="width:100%">
-    <div class="text">Cheeseburger</div>
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="./img/cheeseburger.jpg" style="width:100%">
+        <div class="text">Cheeseburger</div>
+      </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="./img/bolognasamich.jpg" style="width:100%">
-    <div class="text">Fried Bologna Sandwhich</div>
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="./img/bolognasamich.jpg" style="width:100%">
-    <div class="text">Fried Bologna Sandwhich</div>
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="./img/bolognasamich.jpg" style="width:100%">
+        <div class="text">Fried Bologna Sandwhich</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="./img/chickennuggies.jpg" style="width:100%">
+        <div class="text">Chicken Strips</div>
+      </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="./img/salad.jpg" style="width:100%">
+          <div class="text">Salad</div>
+      </div>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+      <ul>
+        <li>Phone Number: 731-423-3359</li>
+        <li>Email Address: dixiecastledowntown@gmail.com</li>
+        <li>Addresses:
+          215 E Baltimore St, Jackson, TN 38301
+          933 Airways Blvd; Jackson, TN 38301</li>
+        <li>©The Real Bros of Madison County</li>
+      </ul>
+    </div>
+    <script>
+      filterSelection("all")
 
-    <ul>
-      <li>Phone Number: 731-423-3359</li>
-      <li>Email Address: dixiecastledowntown@gmail.com</li>
-      <li>Addresses:
-        215 E Baltimore St, Jackson, TN 38301
-        933 Airways Blvd; Jackson, TN 38301</li>
-      <li>©The Real Bros of Madison County</li>
-    </ul>
-  </div>
-  <script>
-    filterSelection("all")
-
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("filterDiv");
-      if (c == "all") c = "";
-      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-      for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-      }
-    }
-
-    // Show filtered elements
-    function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-          element.className += " " + arr2[i];
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
         }
       }
-    }
 
-    // Hide elements that are not selected
-    function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);
+      // Show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
         }
       }
-      element.className = arr1.join(" ");
-    }
 
-    // Add active class to the current control button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
-    var slideIndex = 0;
-showSlides();
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-  </script>
+      // Add active class to the current control button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
 </body>
 
 </html>
