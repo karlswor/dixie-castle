@@ -8,6 +8,8 @@ p {
   font-size: 32px;
   color: black;
   font-size: "Times New Roman", Times, Serif;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nav ul {
@@ -69,14 +71,13 @@ body {
 }
 
 .footer {
-  position: fixed;
+
   left: 0;
   bottom: 0;
   width: 100%;
-  color: 	#000080;
+  color: #000080;
   text-align: center;
   position: relative;
-
 }
 
 .footer li {
@@ -101,8 +102,12 @@ h1 {
 h2 {
   font-size: 40px;
   color: navy;
+  padding-left: 18px;
 }
 
+h3 {
+  padding-left: 10px;
+}
 .intro {
   font-size: 25px;
 }
@@ -117,6 +122,7 @@ h2 {
 
 .aboutus {
   font-size: 25px;
+  padding: 20%;
 }
 
 .hoursinfo {
@@ -124,7 +130,9 @@ h2 {
 }
 
 .headingtakeout {
-  color: 	#000080;
+  color: #000080;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .homelink a {
@@ -132,10 +140,13 @@ h2 {
   text-align: center;
   font-family: cursive;
   display: block;
-  color: 	#000000;
+  color: #000000;
+  padding: 10px;
 }
-.homelink a:hover{
+
+.homelink a:hover {
   color: skyblue;
+
 }
 
 .column {
@@ -261,6 +272,7 @@ img {
 .container {
   overflow: hidden;
   font-size: 11px;
+
 }
 
 .filterDiv {
@@ -278,6 +290,8 @@ img {
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
+
+
 }
 
 /* Style the buttons */
@@ -299,8 +313,10 @@ img {
   background-color: #666;
   color: white;
 }
-.Menu{
+
+.Menu {
   position: absolute;
+
 }
 
 /* Style all font awesome icons */
@@ -318,7 +334,6 @@ img {
 }
 
 /* Set a specific color for each brand */
-
 /* Facebook */
 .fa-facebook {
   background: #3B5998;
