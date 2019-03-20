@@ -10,6 +10,7 @@ p {
   font-size: "Times New Roman", Times, Serif;
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
 .nav ul {
@@ -71,7 +72,6 @@ body {
 }
 
 .footer {
-
   left: 0;
   bottom: 0;
   width: 100%;
@@ -108,6 +108,7 @@ h2 {
 h3 {
   padding-left: 10px;
 }
+
 .intro {
   font-size: 25px;
 }
@@ -122,7 +123,7 @@ h3 {
 
 .aboutus {
   font-size: 25px;
-  padding: 20%;
+  padding: 20px;
 }
 
 .hoursinfo {
@@ -133,6 +134,7 @@ h3 {
   color: #000080;
   padding-left: 20px;
   padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .homelink a {
@@ -146,7 +148,6 @@ h3 {
 
 .homelink a:hover {
   color: skyblue;
-
 }
 
 .column {
@@ -261,6 +262,7 @@ h3 {
 img {
   height: 500px;
   width: 600px;
+  align-items: center;
 }
 
 .row::after {
@@ -272,7 +274,6 @@ img {
 .container {
   overflow: hidden;
   font-size: 11px;
-
 }
 
 .filterDiv {
@@ -290,8 +291,6 @@ img {
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
-
-
 }
 
 /* Style the buttons */
@@ -316,7 +315,6 @@ img {
 
 .Menu {
   position: absolute;
-
 }
 
 /* Style all font awesome icons */
